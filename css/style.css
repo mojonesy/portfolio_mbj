@@ -273,3 +273,29 @@ nav { display: none; }
 .section__subtitle--fun-stuff {
     position: relative;
 }
+
+.section__subtitle--fun-stuff {
+    color: var(--clr-dark);
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.photo__img {
+    background: var(--clr-light);
+    transition: 
+        transform 750ms cubic-bezier(0.5, 0, 0.5, 1),
+        opacity 250ms linear;
+}
+
+.photo__img:focus {
+    position: relative;
+    z-index: 2;
+}
+
+.photo__img:hover {
+    transform: scale(1.2);
+    opacity: 0.75;
+}
