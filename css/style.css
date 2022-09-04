@@ -36,6 +36,10 @@
 
 /* General Styles */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--clr-dark);
     color: var(--clr-light);
@@ -56,10 +60,10 @@ img {
 
 strong { font-weight: var(--fw-bold) }
 
-:focus {
+/* :focus {
     outline: 3px solid var(--clr-accent);
     outline-offset: 3px;
-}
+} */
 
 /* Buttons */
 
@@ -128,7 +132,6 @@ h3 { font-size: var(--fs-h3) }
 header {
     display: flex;
     justify-content: space-between;
-    padding: 1em;
 }
 
 .nav {
@@ -177,6 +180,28 @@ header {
     top: 1em;
     z-index: 1000;
 }
+
+.nav-open .nav {
+    transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+    position: fixed;
+}
+
+.nav-open .drumsticks {
+    transform: rotate(.625turn);
+}
+
+.nav-open .drumsticks::before {
+    transform: rotate(90deg) translateX(-8px);
+}
+
+.nav-open .drumsticks::after {
+    opacity: 0;
+}
+
+
 
 .drumsticks {
     display: block;
