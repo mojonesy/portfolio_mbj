@@ -1,170 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Molly Jones - Software Engineer/Professional Drummer & Percussionist</title>
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&family=Source+Code+Pro:wght@300&display=swap" 
-        rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Molly Jones - Software Engineer/Professional Drummer & Percussionist</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&family=Source+Code+Pro:wght@300&display=swap" 
+            rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css">
 
-</head>
-<body>
-    <header>
-        <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="drumsticks"></span>
-        </button>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">What I Do</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Fun Stuff</a></li>
+    </head>
+    <body>
+        <header>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="drumsticks"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#what-i-do" class="nav__link">What I Do</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#fun-stuff" class="nav__link">Fun Stuff</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Intro -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hello, I'm <strong>Molly Jones</strong>
+            </h1>
+            <h3 class="section__subtitle section__subtitle--intro">
+                <span>Software Engineer </span>
+                <span>& Professional Drummer</span>
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odit eveniet ducimus laudantium adipisci 
+                at dolorum dignissimos, quisquam consequuntur voluptate iure quod 
+                libero explicabo consectetur placeat vel distinctio animi voluptatibus?
+            </p>
+            <img src="img/logo.png" alt="Molly Jones' custom React/drum logo" class="intro__img">
+
+            <a href="#projects" class="btn">Projects</a>
+        </section>
+
+
+        <!-- What I Do -->
+        <section class="what-i-do" id="what-i-do">
+            <h2 class="section__title section__title--what-i-do">What I Do</h2>
+            <div class="whatidos">
+                <div class="whatido">
+                    <h3>Software Engineer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Doloribus fugiat ipsam neque, sapiente placeat distinctio, 
+                        excepturi accusantium possimus explicabo enim impedit unde ullam quae dignissimos 
+                        ab laudantium dicta atque libero animi a. 
+                        Optio magnam nihil, ullam ut recusandae atque consequuntur.
+                    </p>
+                </div> <!-- / software-engineer -->
+
+                <div class="whatido">
+                    <h3>Professional Drummer & Percussionist</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Aut veniam molestias ex sit asperiores perferendis, officiis, 
+                        dolores consequatur delectus, repellendus iusto? 
+                        Aliquam, tempore veritatis quae nisi corrupti, 
+                        ipsum excepturi atque minus pariatur dignissimos ea eveniet illum quod nostrum, 
+                        minima nesciunt.
+                    </p>
+                </div> <!-- / drummer -->
+            </div> <!-- / What I Do -->
+        </section>
+
+
+        <!-- My Projects -->
+        <section class="my-projects" id="projects">
+            <h2 class="section__title section__title--projects">My Projects</h2>
+            <p class="section__subtitle section__subtitle--projects">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, ipsam.
+            </p>
+
+            <div class="projects">
+                <!-- Project Item 01 -->
+                <div class="project">
+                    <h3>Periodic Tables - Restaurant Reservation System</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Ratione, placeat.
+                    </p>
+                    <a href="project-item.html" class="project__item">
+                        <img src="img/periodic-tables.png" alt="" class="project__img">
+                    </a>
+                </div> <!-- / Project Item 01 -->
+
+                <!-- Project Item 02 -->
+                <div class="project">
+                    <h3>Flashcard-O-Matic</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Ratione, placeat.
+                    </p>
+                    <a href="project-item.html" class="project__item">
+                        <img src="img/flashcard-o-matic.png" alt="" class="project__img">
+                    </a>
+                </div> <!-- Project Item 02 -->
+
+                <!-- Project Item 03 -->
+                <div class="project">
+                    <h3>We Love Movies - server/database</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Ratione, placeat.
+                    </p>
+                    <a href="project-item.html" class="project__item">
+                        <img src="img/we-love-movies.png" alt="" class="project__img">
+                    </a>
+                </div> <!-- Project Item 03 -->
+            </div> <!-- My Projects -->
+        </section>
+
+
+        <!-- Fun Stuff -->
+        <section class="fun-stuff" id="fun-stuff">
+            <h2 class="section__title section__title--fun-stuff">Fun Stuff</h2>
+            <p class="section__subtitle section__subtitle--fun-stuff">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit neque, cumque reiciendis qui aliquam molestias.
+            </p>
+
+            <div class="photos">
+                <!-- Photo Item 01 -->
+                <img src="" alt="" class="photo__img">
+
+                <!-- Photo Item 02 -->
+                <img src="" alt="" class="photo__img">
+
+                <!-- Photo Item 03 -->
+                <img src="" alt="" class="photo__img">
+
+                <!-- Photo Item 04 -->
+                <img src="" alt="" class="photo__img">
+
+                <!-- Photo Item 05 -->
+                <img src="" alt="" class="photo__img">
+
+                <!-- Photo Item 06 -->
+                <img src="" alt="" class="photo__img">
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/mollybjones/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/mojonesy">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
             </ul>
-        </nav>
-    </header>
-
-    <!-- Intro -->
-    <section class="intro" id="home">
-        <h1 class="section__title section__title--intro">
-            Hello, I'm <strong>Molly Jones</strong>
-        </h1>
-        <h3 class="section__subtitle section__subtitle--intro">
-            <span>Software Engineer </span>
-            <span>& Professional Drummer</span>
-        </h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odit eveniet ducimus laudantium adipisci 
-            at dolorum dignissimos, quisquam consequuntur voluptate iure quod 
-            libero explicabo consectetur placeat vel distinctio animi voluptatibus?
-        </p>
-        <img src="img/logo.png" alt="Molly Jones' custom React/drum logo" class="intro__img">
-
-        <a href="#projects" class="btn">Projects</a>
-    </section>
+        </footer>
 
 
-    <!-- What I Do -->
-    <section class="what-i-do" id="what-i-do">
-        <h2 class="section__title section__title--what-i-do">What I Do</h2>
-        <div class="whatidos">
-            <div class="whatido">
-                <h3>Software Engineer</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Doloribus fugiat ipsam neque, sapiente placeat distinctio, 
-                    excepturi accusantium possimus explicabo enim impedit unde ullam quae dignissimos 
-                    ab laudantium dicta atque libero animi a. 
-                    Optio magnam nihil, ullam ut recusandae atque consequuntur.
-                </p>
-            </div> <!-- / software-engineer -->
+        <script src="js/index.js"></script>
 
-            <div class="whatido">
-                <h3>Professional Drummer & Percussionist</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Aut veniam molestias ex sit asperiores perferendis, officiis, 
-                    dolores consequatur delectus, repellendus iusto? 
-                    Aliquam, tempore veritatis quae nisi corrupti, 
-                    ipsum excepturi atque minus pariatur dignissimos ea eveniet illum quod nostrum, 
-                    minima nesciunt.
-                </p>
-            </div> <!-- / drummer -->
-        </div> <!-- / What I Do -->
-    </section>
-
-
-    <!-- My Projects -->
-    <section class="my-projects" id="projects">
-        <h2 class="section__title section__title--projects">My Projects</h2>
-        <p class="section__subtitle section__subtitle--projects">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, ipsam.
-        </p>
-
-        <div class="projects">
-            <!-- Project Item 01 -->
-            <div class="project">
-                <h3>Periodic Tables - Restaurant Reservation System</h3>
-                <p>Lorem ipsum dolor sit amet consectetur 
-                    adipisicing elit. Ratione, placeat.
-                </p>
-                <a href="#" class="project__item">
-                    <img src="img/periodic-tables.png" alt="" class="project__img">
-                </a>
-            </div> <!-- / Project Item 01 -->
-
-            <!-- Project Item 02 -->
-            <div class="project">
-                <h3>Flashcard-O-Matic</h3>
-                <p>Lorem ipsum dolor sit amet consectetur 
-                    adipisicing elit. Ratione, placeat.
-                </p>
-                <a href="#" class="project__item">
-                    <img src="img/flashcard-o-matic.png" alt="" class="project__img">
-                </a>
-            </div> <!-- Project Item 02 -->
-
-            <!-- Project Item 03 -->
-            <div class="project">
-                <h3>We Love Movies - server/database</h3>
-                <p>Lorem ipsum dolor sit amet consectetur 
-                    adipisicing elit. Ratione, placeat.
-                </p>
-                <a href="#" class="project__item">
-                    <img src="img/we-love-movies.png" alt="" class="project__img">
-                </a>
-            </div> <!-- Project Item 03 -->
-        </div> <!-- My Projects -->
-    </section>
-
-
-    <!-- Fun Stuff -->
-    <section class="fun-stuff" id="funstuff">
-        <h2 class="section__title section__title--fun-stuff">Fun Stuff</h2>
-        <p class="section__subtitle section__subtitle--fun-stuff">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit neque, cumque reiciendis qui aliquam molestias.
-        </p>
-
-        <div class="photos">
-            <!-- Photo Item 01 -->
-            <img src="" alt="" class="photo__img">
-
-            <!-- Photo Item 02 -->
-            <img src="" alt="" class="photo__img">
-
-            <!-- Photo Item 03 -->
-            <img src="" alt="" class="photo__img">
-
-            <!-- Photo Item 04 -->
-            <img src="" alt="" class="photo__img">
-
-            <!-- Photo Item 05 -->
-            <img src="" alt="" class="photo__img">
-
-            <!-- Photo Item 06 -->
-            <img src="" alt="" class="photo__img">
-        </div>
-    </section>
-
-
-    <!-- Footer -->
-    <footer class="footer">
-        <ul class="social-list">
-            <li class="social-list__item">
-                <a class="social-list__link" href="https://www.linkedin.com/in/mollybjones/">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a class="social-list__link" href="https://github.com/mojonesy">
-                    <i class="fab fa-github"></i>
-                </a>
-            </li>
-        </ul>
-    </footer>
-
-</body>
+    </body>
 </html>
