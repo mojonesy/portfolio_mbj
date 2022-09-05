@@ -14,9 +14,9 @@
     --fw-reg: 300;
     --fw-bold: 600;
 
-    --clr-dark: #221623;
-    --clr-light: #eff0df;
-    --clr-accent: #00B295;
+    --clr-dark: #0c1014;
+    --clr-light: #e3edef;
+    --clr-accent: #1485db;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -190,15 +190,11 @@ header {
 }
 
 .nav-open .drumsticks {
-    transform: rotate(.625turn);
+    transform: rotate(-0.125turn);
 }
 
 .nav-open .drumsticks::before {
-    transform: rotate(90deg) translateX(-8px);
-}
-
-.nav-open .drumsticks::after {
-    opacity: 0;
+    transform: rotate(90deg) translateX(-12px);
 }
 
 
@@ -209,8 +205,7 @@ header {
 }
 
 .drumsticks,
-.drumsticks::before,
-.drumsticks::after {
+.drumsticks::before {
     background: var(--clr-accent);
     width: 2em;
     height: 3px;
@@ -218,16 +213,13 @@ header {
     transition: transform 250ms ease-in-out;
 }
 
-.drumsticks::before,
-.drumsticks::after {
+.drumsticks::before {
     content: '';
     position: absolute;
     left: 0;
     right: 0;
+    top: 12px;
 }
-
-.drumsticks::before { top: 8px; }
-.drumsticks::after { bottom: 8px; }
 
 
 /* Intro Section */
