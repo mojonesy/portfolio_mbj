@@ -91,6 +91,7 @@ h1,
 h2,
 h3 {
     line-height: 1.1;
+    letter-spacing: 1px;
     margin: 0;
 }
 
@@ -120,11 +121,6 @@ h3 { font-size: var(--fs-h3) }
     background: var(--clr-accent);
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
-}
-
-.project {
-    font-family: var(--ff-secondary);
-    line-height: 1.3;
 }
 
 /* Header */
@@ -374,6 +370,7 @@ header {
 
 .section__subtitle--fun-stuff {
     color: var(--clr-dark);
+    margin-bottom: 2em;
 }
 
 .photos {
@@ -383,6 +380,9 @@ header {
 
 .photo__img {
     background: var(--clr-light);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     transition: 
         transform 750ms cubic-bezier(0.5, 0, 0.5, 1),
         opacity 250ms linear;
@@ -396,6 +396,7 @@ header {
 .photo__img:hover {
     transform: scale(1.2);
     opacity: 0.75;
+    cursor: pointer;
 }
 
 
