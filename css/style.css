@@ -376,6 +376,8 @@ header {
 .photos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .photo__img {
@@ -394,10 +396,52 @@ header {
 }
 
 .photo__img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     opacity: 0.75;
     cursor: pointer;
 }
+
+
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.88);
+    margin-top: -1px;
+    animation: zoom 0.5s ease-in-out;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+    
+}
+.modal img {
+    max-width: 80%;
+    max-height: 100vh;
+    object-fit: cover;
+}
+
+.closeBtn {
+    color: var(--clr-light);
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.closeBtn:hover { color: var(--clr-accent) }
 
 
 /* Footer */
