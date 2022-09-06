@@ -342,18 +342,24 @@ header {
 @media (min-width: 800px) {
     .projects {
         display: flex;
+        flex-wrap: wrap;
         max-width: 1200px;
         margin: 0 auto;
     }
 
-    .project + .project {
+    .project {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    /* .project + .project {
         margin-left: 2.5em;
     }
 
     .project__item {
         float: left;
         max-width: 400px;
-    }
+    } */
 }
 
 
