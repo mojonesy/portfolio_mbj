@@ -69,10 +69,13 @@ strong { font-weight: var(--fw-bold) }
 
 .btn {
     display: inline-block;
+    width: 150px;
+    margin: 0 auto;
     padding: .5em 1.5em;
     background: var(--clr-accent);
     color: var(--clr-dark);
     text-decoration: none;
+    text-align: center;
     cursor: pointer;
     font-size: .8rem;
     text-transform: uppercase;
@@ -128,6 +131,12 @@ h3 { font-size: var(--fs-h3) }
 header {
     display: flex;
     justify-content: space-between;
+}
+
+.logo {
+    max-width: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 .nav {
@@ -222,7 +231,15 @@ header {
 
 .intro {
     position: relative;
+    padding-top: 4.5em;
     padding-bottom: 7em;
+}
+
+.section__title--intro { margin-bottom: 20px }
+.section__subtitle--intro {margin-bottom: 25px }
+
+.intro__img {
+    display: none;
 }
 
 .down-arrow {
@@ -234,27 +251,9 @@ header {
 }
 
 @media (min-width: 600px) {
-    .intro {
-        display: grid;
-        width: min-content;
-        margin: 0 auto;
-        grid-column-gap: 1em;
-        grid-template-areas:
-            "img title"
-            "img subtitle";
-        grid-template-columns: min-content max-content;
-    }
+    .logo { max-width: 120px }
 
-    .intro__img {
-        grid-area: img;
-        min-width: 250px;
-    }
-
-    .section__subtitle--intro {
-        align-self: start;
-        grid-row: 2;
-        text-align: left;
-    }
+    .intro { max-width: 650px }
 
     .section__subtitle--intro span::after {
         content: "\a";
