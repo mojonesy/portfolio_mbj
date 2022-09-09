@@ -23,7 +23,7 @@
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
 
-    --bs: 2em 0.15em 4em rgba(18, 172, 233, 0.817),
+    --bs: 3em 0.15em 4em rgba(18, 172, 233, 0.817),
           0.125em 0.125em 1em rgba(115, 194, 247, 0.507);
 }
 
@@ -44,7 +44,7 @@ html {
 }
 
 body {
-    background-color: var(--clr-dark);
+    background-color: #0C0B0B;
     color: var(--clr-light);
     margin: 0;
     font-family: var(--ff-primary);
@@ -116,7 +116,6 @@ h3 { font-size: var(--fs-h3) }
     font-weight: var(--fw-reg);
 }
 
-/* Maybe?? */
 .section__title--intro strong {
     display: block;
 }
@@ -243,11 +242,7 @@ header {
 }
 
 .section__title--intro { margin-bottom: 20px }
-.section__subtitle--intro {margin-bottom: 25px }
-
-.intro__img {
-    display: none;
-}
+.section__subtitle--intro { margin-bottom: 25px }
 
 .down-arrow {
     position: absolute;
@@ -257,10 +252,24 @@ header {
     color: var(--clr-light)
 }
 
+@media (min-width: 1200px) {
+    body {
+        background-image: url("../img/portfolio-background.png");
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-size: 50em;
+    }
+}
+
 @media (min-width: 600px) {
+
     .logo { max-width: 120px }
 
-    .intro { max-width: 650px }
+    .intro {
+        max-width: 650px; 
+        margin-left: 20px;
+        margin-bottom: 40px;
+    }
 
     .section__subtitle--intro span::after {
         content: "\a";
@@ -344,9 +353,15 @@ header {
 }
 
 .project {
+    border: transparent;
+    border-radius: 10px;
+    background-color: #3b4d5e5e;
     max-width: 650px;
-    margin: 0 auto;
-    padding-bottom: 3em;
+    margin: 2em auto;
+    padding: 2em;
+    box-shadow: 
+        0.5em 0.15em 1em var(--clr-accent),
+        0.125em 0.125em 1em rgba(115, 194, 247, 0.507);;
 }
 
 .project__item {
@@ -364,7 +379,7 @@ header {
 
     .project {
         width: 40%;
-        margin: 0 auto;
+        margin: 0 auto 2em;
     }
 
     /* .project + .project {
