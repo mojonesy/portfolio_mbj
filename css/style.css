@@ -311,6 +311,12 @@ header {
     padding-bottom: 2em;
 }
 
+.thinkful { 
+    text-decoration: none;
+    color: var(--clr-dark);
+    font-weight: bold; 
+}
+
 @media (min-width: 800px) {
     .whatidos {
         display: flex;
