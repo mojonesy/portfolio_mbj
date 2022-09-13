@@ -359,15 +359,14 @@ header {
 }
 
 .project {
-    border: transparent;
+    border: 2px solid;
     border-radius: 10px;
-    background-color: #3b4d5e5e;
     max-width: 650px;
     margin: 2em auto;
     padding: 2em;
     box-shadow: 
-        0.5em 0.15em 1em var(--clr-accent),
-        0.125em 0.125em 1em rgba(115, 194, 247, 0.507);;
+        inset 0 0 1em 0.1em var(--clr-accent),
+        0 0 1em 0.1em var(--clr-accent);
 }
 
 .project__item {
