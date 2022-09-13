@@ -404,15 +404,11 @@ header {
     background-color: var(--clr-accent);
 }
 
-.section__title--fun-stuff,
-.section__subtitle--fun-stuff {
+.section__title--fun-stuff {
     position: relative;
 }
 
-.section__subtitle--fun-stuff {
-    color: var(--clr-dark);
-    margin-bottom: 2em;
-}
+.fun-stuff p { margin-bottom: 30px }
 
 .photos {
     display: grid;
