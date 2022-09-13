@@ -1,0 +1,40 @@
+body { background-image: none }
+
+.intro { padding-bottom: 2em }
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    color: var(--clr-light);
+    text-align: center;
+    padding-left: 0px;
+    margin: 2em 4em;
+}
+
+.skills-list__item {
+    scale: 3;
+    padding: 2em;
+}
+
+@media (min-width: 800px) {
+    .section__title--intro strong {
+        min-width: 9em;
+    }
+
+    .intro { 
+        max-width: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .intro-text {
+        max-width: 600px;
+    }
+
+    .skills-list {
+        display: flex;
+        flex-direction: column;
+    }
+}
