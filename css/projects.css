@@ -25,7 +25,7 @@ body { background-image: none }
     .intro { 
         max-width: none;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -36,5 +36,6 @@ body { background-image: none }
     .skills-list {
         display: flex;
         flex-direction: column;
+        margin-right: 8em;
     }
 }
