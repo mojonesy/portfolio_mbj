@@ -13,11 +13,14 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/flashcard_o_matic.css">
+    <link rel="stylesheet" href="css/projects.css">
 
 </head>
 <body>
     <header>
+        <div class="logo">
+            <img src="img/logo_vector.png" alt="Molly Jones' custom React/drum logo">
+        </div>
         <button class="nav-toggle" aria-label="toggle navigation">
             <span class="drumsticks"></span>
         </button>
@@ -32,13 +35,32 @@
     </header>
 
     <section class="intro">
-        <h1 class="section__title section__title--intro">
-            Project: <strong>Flashcard-O-Matic</strong>
-        </h1>
-        <p class="section__subtitle section__subtitle--intro">
-            Create & study virtual flashcards
-        </p>
-        <img src="img/flashcard-o-matic.png" alt="" class="intro__img">
+        <div class="intro-text">
+            <h1 class="section__title section__title--intro">
+                Project: <strong>Flashcard-O-Matic</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">
+                Create & study virtual flashcards
+            </p>
+            <img src="img/flashcard-o-matic.png" alt="" class="intro__img">
+        </div>
+
+        <div class="skills">
+            <ul class="skills-list">
+                <li class="skills-list__item">
+                    <iconify-icon icon="logos:react"></iconify-icon>
+                </li>
+                <li class="skills-list__item">
+                    <iconify-icon icon="logos:javascript"></iconify-icon>
+                </li>
+                <li class="skills-list__item">
+                    <iconify-icon icon="logos:bootstrap"></iconify-icon>
+                </li>
+                <li class="skills-list__item">
+                    <iconify-icon icon="vscode-icons:file-type-css"></iconify-icon>
+                </li>
+            </ul>
+        </div>
     </section>
 
     <div class="project-item-individual">
@@ -72,6 +94,7 @@
 
 
     <script src="js/index.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
 
     </body>
 </html>
