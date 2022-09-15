@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body { background-image: none }
 
 .intro { padding-bottom: 2em }
@@ -5,6 +11,7 @@ body { background-image: none }
 .skills-list {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     color: var(--clr-light);
     text-align: center;
