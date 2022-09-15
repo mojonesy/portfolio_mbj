@@ -244,6 +244,8 @@ header {
 .section__title--intro { margin-bottom: 20px }
 .section__subtitle--intro { margin-bottom: 25px }
 
+.intro p { letter-spacing: 1.5px }
+
 .down-arrow {
     position: absolute;
     bottom: 45px;
@@ -252,7 +254,7 @@ header {
     color: var(--clr-light)
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
     body {
         background-image: url("../img/portfolio-background.png");
         background-repeat: no-repeat;
@@ -268,7 +270,7 @@ header {
     .intro {
         max-width: 650px; 
         margin-left: 20px;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
     }
 
     .section__subtitle--intro span::after {
