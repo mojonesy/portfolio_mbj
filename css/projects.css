@@ -4,11 +4,15 @@
     box-sizing: border-box;
 }
 
-body { background-image: none }
+body { 
+    background-image: none;
+    margin: 2em;
+}
 
 .intro { padding-bottom: 2em }
 
-.skills-list {
+.skills-list,
+.skills-list__periodic-tables {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -44,5 +48,11 @@ body { background-image: none }
         display: flex;
         flex-direction: column;
         margin-right: 8em;
+    }
+
+    .skills-list__periodic-tables {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1em;
     }
 }
