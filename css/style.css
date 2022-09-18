@@ -242,7 +242,11 @@ header {
 }
 
 .section__title--intro { margin-bottom: 20px }
-.section__subtitle--intro { margin-bottom: 25px }
+
+.section__subtitle--intro { 
+    margin-bottom: 25px; 
+    padding: 0 3px;
+}
 
 .intro p { letter-spacing: 1.5px }
 
