@@ -31,6 +31,13 @@ body { background-image: none }
     flex-basis: 25%;
 }
 
+.github__link { 
+    text-decoration: none;
+    color: var(--clr-accent) 
+}
+.github__link:hover { color: #35d9fe }
+
+
 @media (min-width: 800px) {
     .section__title--intro strong {
         min-width: 6.5em;
@@ -39,12 +46,12 @@ body { background-image: none }
     .intro { 
         max-width: none;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     }
 
     .intro-text {
-        max-width: 600px;
+        max-width: 800px;
     }
 
     .skills-list {
