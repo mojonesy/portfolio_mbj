@@ -408,19 +408,26 @@ header {
 
 .fun-stuff {
     background-color: var(--clr-accent);
+    text-align: center;
 }
 
 .section__title--fun-stuff {
     position: relative;
 }
 
-.fun-stuff p { margin-bottom: 30px }
+.section__title--fun-stuff::after {
+    content: '';
+    display: block;
+    width: 3em;
+    height: 1px;
+    margin: 0.5em auto 0.3em;
+    background: currentColor;
+    opacity: 0.25;
+}
 
-.photos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    max-width: 1400px;
-    margin: 0 auto;
+.fun-stuff p { 
+    margin: 0 auto 2.5em; 
+    max-width: 800px;
 }
 
 .photo__img {
@@ -444,6 +451,14 @@ header {
     cursor: pointer;
 }
 
+@media (min-width: 800px) {
+    .photos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+}
 
 .modal {
     width: 100%;
