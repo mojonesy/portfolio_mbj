@@ -13,6 +13,8 @@
 
     --fw-reg: 300;
     --fw-bold: 600;
+    --fw-sec-reg: 300;
+    --fw-sec-bold: 400;
 
     --clr-dark: #0c1014;
     --clr-light: #e3edef;
@@ -71,6 +73,7 @@ strong {
     outline-offset: 3px;
 } */
 
+
 /* Buttons */
 
 .btn {
@@ -128,8 +131,13 @@ h3 { font-size: var(--fs-h3) }
 .section__subtitle--intro {
     background: var(--clr-accent);
     font-family: var(--ff-secondary);
+    font-weight: var(--fw-sec-reg);
     margin-bottom: 1em;
     box-shadow: var(--bs);
+}
+.section__subtitle--intro span:first-child {
+    font-weight: var(--fw-sec-bold);
+    line-height: 1.3;
 }
 
 /* Header */
@@ -272,7 +280,7 @@ header {
     .logo { max-width: 120px }
 
     .intro {
-        max-width: 650px; 
+        max-width: 600px; 
         margin-left: 20px;
         margin-bottom: 50px;
     }
