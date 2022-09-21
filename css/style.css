@@ -194,7 +194,7 @@ header {
     background: transparent;
     border: none;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     right: 1em;
     top: 1em;
     z-index: 1000;
@@ -229,6 +229,7 @@ header {
     width: 2em;
     height: 3px;
     border-radius: 1em;
+    box-shadow: 0 0 2em 2px #fff;
     transition: transform 250ms ease-in-out;
 }
 
@@ -383,10 +384,11 @@ header {
         0 0 1em 0.1em var(--clr-accent);
 }
 
-.project__item {
+.project__link {
     text-decoration: none;
     color: var(--clr-light);
 }
+.project__link:hover { color: var(--clr-accent) }
 
 @media (min-width: 800px) {
     .projects {
