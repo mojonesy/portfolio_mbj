@@ -22,6 +22,7 @@ images.forEach((img) => {
         imgSrc = e.target.src;
 
         imgModal(imgSrc);
+        navToggle.style.display = "none";
     });
 });
 
@@ -39,6 +40,7 @@ let imgModal = (src) => {
 
     closeBtn.onclick = () => {
         modal.remove();
+        navToggle.style.display = "block";
     };
 
     modal.append(newImg, closeBtn);
