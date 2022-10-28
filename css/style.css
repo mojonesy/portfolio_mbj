@@ -137,6 +137,7 @@ h3 { font-size: var(--fs-h3) }
 }
 .section__subtitle--intro span:first-child {
     font-weight: var(--fw-sec-bold);
+    display: block;
 }
 
 /* Header */
@@ -298,10 +299,11 @@ header {
         margin-bottom: 50px;
     }
 
-    .section__subtitle--intro span::after {
+    /* This doesn't work for Safari iOS */
+    /* .section__subtitle--intro span::after {
         content: "\a";
         white-space: pre;
-    }
+    } */
 }
 
 
